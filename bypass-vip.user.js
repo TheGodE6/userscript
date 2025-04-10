@@ -198,7 +198,7 @@
 
 (async () => {
     const config = {
-        time: 10, // Wait time to avoid detections (Increase this to 30+ seconds to be extra safe from key system bypass protections)
+        time: 4, // Wait time to avoid detections (Increase this to 30+ seconds to be extra safe from key system bypass protections)
         key: '' //Premium key if you have one
     };
 
