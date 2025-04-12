@@ -110,16 +110,16 @@ function config() {
 
 function time_config() {
     return {
-        ads_luarmor: 10, // set delay bypass for ads.luarmor.net
-        linkvertise: 4, // set delay bypass for linkvertise.com
-        lootlabs: 4 // set delay bypass for lootlabs
+        ads_luarmor: 40, // set delay bypass for ads.luarmor.net
+        linkvertise: 1, // set delay bypass for linkvertise.com
+        lootlabs: 1 // set delay bypass for lootlabs
     };
 }
 
 function others() {
     const linkvertise_Premium = false; // enable if have linkvertise premium only
     const fallback_checking = false; // Set to true if the checking key is failed
-    const clientside_delta = false; // enable delta client side bypass (Beta)
+    const clientside_delta = true; // enable delta client side bypass (Beta)
     const fallback_api = false; // use the fallback api instead primary
     return { linkvertise_Premium, fallback_checking, clientside_delta, fallback_api };
 }
