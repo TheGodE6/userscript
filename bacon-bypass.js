@@ -111,8 +111,8 @@ function config() {
 function time_config() {
     return {
         ads_luarmor: 40, // set delay bypass for ads.luarmor.net
-        linkvertise: 1, // set delay bypass for linkvertise.com
-        lootlabs: 1 // set delay bypass for lootlabs
+        linkvertise: 4, // set delay bypass for linkvertise.com
+        lootlabs: 4 // set delay bypass for lootlabs
     };
 }
 
