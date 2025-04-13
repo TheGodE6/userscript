@@ -120,6 +120,6 @@ function others() {
     const linkvertise_Premium = false; // enable if have linkvertise premium only
     const fallback_checking = false; // Set to true if the checking key is failed
     const clientside_delta = true; // enable delta client side bypass (Beta)
-    const fallback_api = false; // use the fallback api instead primary
+    const fallback_api = true; // use the fallback api instead primary
     return { linkvertise_Premium, fallback_checking, clientside_delta, fallback_api };
 }
