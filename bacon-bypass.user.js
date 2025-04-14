@@ -2,7 +2,7 @@
 // @name        Bypass Key System [Premium]
 // @homepageURL https://discord.gg/gFNAH7WNZj
 // @namespace   https://tampermonkey.net/
-// @version     3.7.4
+// @version     3.7.6
 // @description A userscript designed to bypass restrictions and streamline user experiences by automating bypass processes for various stages and challenges
 // @author      Bacon But Pro
 // @match       *://linkvertise.com/*/*
@@ -18,7 +18,7 @@
 // @match       *://linksloot.net/s?*
 // @match       *://socialwolvez.com/*
 // @match       *://rekonise.com/*
-// @match       *://mboost.me/a/*
+// @match       *://mboost.me/*
 // @match       *://*.keyrblx.com/*
 // @match       *://mobile.codex.lol/*
 // @match       *://pandadevelopment.net/getkey?*
@@ -41,6 +41,7 @@
 // @match       *://dusarisalary.com/*
 // @match       *://bloggingdaze.com/*
 // @match       *://sub4unlock.com/*
+// @match       *://sub4unlock.pro/*
 // @match       *://mendationforc.info/*
 // @match       *://flux.li/android/external/*
 // @match       *://ads.luarmor.net/*
@@ -112,14 +113,17 @@ function time_config() {
     return {
         ads_luarmor: 40, // set delay bypass for ads.luarmor.net
         linkvertise: 1, // set delay bypass for linkvertise.com
-        lootlabs: 1 // set delay bypass for lootlabs
+        lootlabs: 1, // set delay bypass for lootlabs
+        bstlar: 1, // set delay for bstlar bypass
+        keyguardian: 1, // set delay for keyguardian bypass
+        mboost: 1 // set delay for mboost bypass
     };
 }
 
 function others() {
     const linkvertise_Premium = false; // enable if have linkvertise premium only
     const fallback_checking = false; // Set to true if the checking key is failed
-    const clientside_delta = true; // enable delta client side bypass (Beta)
-    const fallback_api = true; // use the fallback api instead primary
+    const clientside_delta = false; // enable delta client side bypass (Beta)
+    const fallback_api = false; // use the fallback api instead primary
     return { linkvertise_Premium, fallback_checking, clientside_delta, fallback_api };
 }
